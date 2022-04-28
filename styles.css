@@ -1,0 +1,538 @@
+:root {
+  --spot-green: #1db954;
+  --spot-black: rgb(30, 30, 30);
+  --spot-blue-grad: rgb(37, 69, 108);
+  --spot-transp: rgba(39, 55, 95, 0.2);
+  --spot-blue: rgb(39, 55, 95);
+  --dark-gray: #241d1d;
+}
+
+@import url(//db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black);
+
+@font-face {
+  font-family: "Circular Tx T Black";
+  src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot");
+  src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot?#iefix") format("embedded-opentype")
+}
+
+body {
+  background-color: var(--spot-black);
+  width: 100%;
+  margin: 0;
+}
+
+* {
+  font-family: "Circular Tx T Black";
+  margin: 0;
+  color: white;
+}
+
+/* **************** SIDE NAV ********************** */
+
+.all__page {
+  width: 100%;
+  margin: 0;
+}
+
+.sidebar {
+  width: 10%;
+  height: 100vh;
+  text-align: start;
+  position: fixed;
+  z-index: 1;
+  margin: 0;
+  border-right: 2px solid #292929;
+
+}
+
+#logo {
+  margin-top: 15% !important;
+  margin-left: 15% !important;
+  justify-content: center;
+  display: flex;
+  padding-left: 5px;
+  padding-bottom: 15px;
+  width: 120px;
+  cursor: pointer;
+  image-rendering: optimizeQuality;
+  color: rgb(177, 172, 172);
+}
+
+.sidebar a:first-child {
+  margin-top: 50%;
+}
+
+.sidebar a {
+  text-align: start;
+  margin-left: 15%;
+  display: block;
+  margin-top: 40px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Montserrat";
+  padding: 10% 0;
+}
+
+#quem_somos {
+  background: url("./images/01..svg") no-repeat;
+  background-position: 0% 50%;
+}
+
+#o_que_fazemos {
+  background: url("./images/02..svg") no-repeat;
+  background-position: 0% 50%;
+}
+
+#nossos_clientes {
+  background: url("./images/03..svg") no-repeat;
+  background-position: 0% 50%;
+}
+
+
+#plan_news {
+  background: url("./images/04..svg") no-repeat;
+  background-position: 0% 50%;
+}
+
+#contato {
+  background: url("./images/05..svg") no-repeat;
+  background-position: 0% 50%;
+}
+
+.sidebar__header--bottom {
+  position: relative;
+  margin: 80% 0 0 0;
+  width: 100%;
+  background: url("./images/;\).svg") no-repeat;
+  background-position: 10% 35%;
+  border-top: 2px solid #292929;
+}
+
+.sidebar__header--bottom p {
+  cursor: pointer;
+  padding: 0 10%;
+  position: absolute;
+  top: 40%;
+}
+
+.sidebar__header--bottom a {
+  cursor: pointer;
+  position: relative;
+  left: 75%;
+}
+
+.items-seta img {
+  margin-top: 45%;
+  width: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .sidebar a {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+.side {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.items:hover {
+  color: #fff;
+}
+
+.mainsection {
+  padding: 9% 0 0 15%;
+  width: 78%;
+  min-height: 100vh;
+  display: inline-flex;
+}
+
+
+.mainsection__left--side {
+  width: 50%;
+}
+
+.breadcrumb__top {
+  font-size: 30px;
+  color: #939598;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+
+#breadcrumb__games {
+  background: url("./images/02..svg") no-repeat;
+  background-position: 0% 50%;
+  background-size: contain;
+}
+
+#breadcrumb__casesgames {
+  background: url("./images/04..svg") no-repeat;
+  background-position: 0% 50%;
+  background-size: contain;
+}
+
+#breadcrumb__contact {
+  background: url("./images/05..svg") no-repeat;
+  background-position: 0% 50%;
+  background-size: contain;
+}
+
+.left__side--title {
+  font-size: 43px;
+  color: #939598;
+  font-family: "Montserrat";
+}
+
+.left__side--subtitle {
+  font-size: 30px;
+  color: #939598;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+
+.left__side--h4 {
+  font-size: 16px;
+  line-height: 26px;
+  color: #a3a3a3;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+
+.left__side--p {
+  width: 90%;
+  height: 138px;
+  font-size: 13px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+
+.left__side--p--contato {
+  width: 90%;
+  font-size: 13px;
+  line-height: 25px;
+  font-family: "Montserrat";
+}
+
+.mainsection__right--side {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin: 0 1%;
+  flex: 1;
+}
+
+/*CASES-GAMES*/
+
+.mainsection__casesgames {
+  padding: 9% 0 0 15%;
+  width: 78%;
+  min-height: 100vh;
+  display: inline-block;
+}
+
+.left__side--text {
+  font-size: 12px;
+  color: #939598;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+
+.mainsection__casesgames-cards {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 1%;
+  flex: 1;
+}
+
+/*CASES GAMES*/
+
+.card-content {
+  margin: 0 1%;
+  width: 98%;
+}
+
+.image {
+  display: flex;
+  width: 10vw;
+  height: 18vh;
+  background-color: #393334;
+  object-fit: cover;
+}
+
+.card-text p {
+  width: 100%;
+  font-size: 13px;
+  line-height: 26px;
+  color: #ffffff;
+  font-weight: 300;
+  font-family: "Montserrat";
+  text-align: start;
+}
+
+/* RESPONSIVE SIDE BAR */
+.mobileNav {
+  display: none;
+}
+
+#mobcont {
+  display: none;
+}
+
+.mobFooter {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+
+  /* DISPLAY FOR CURRENT ELEMENTS */
+  .sidebar {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-content: center;
+  }
+
+  #logo {
+    float: left;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    height: 40px;
+    width: auto;
+  }
+
+  .sidebar a.items {
+    display: none !important;
+    /* Our code may have changed */
+  }
+
+  .sidebar hr {
+    display: none;
+    /* Our code may have changed */
+  }
+
+  footer {
+    /* Our code may have changed */
+    display: none !important;
+    z-index: 0 !important;
+  }
+
+  #tarkan {
+    /* Our code may have changed, change accordingly*/
+    display: none !important;
+  }
+
+  #tarkantext {
+    /* Our code may have changed, change accordingly*/
+    display: none !important;
+  }
+
+  #divIndiv {
+    /* Our code may have changed - this is the row that used to have Tarkan */
+    display: none;
+  }
+
+  #navBarOpen {
+    height: 20px;
+    width: auto;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+
+  .mobileNav {
+    display: block;
+  }
+
+  #mobcont {
+    display: block;
+  }
+
+  .jumboMob {
+    background-image: url("./spot-mobile-image.png");
+    background-size: cover;
+    height: 100vh;
+    width: 60vw;
+  }
+
+  .mobFooter {
+    display: block;
+  }
+}
+
+/* @media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+} */
+/* SIDEBAR MENU */
+@media screen and (max-width: 769px) {
+  .mobileOverlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: -0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 3;
+    /* Sit on top */
+    right: 0;
+    top: 0;
+    background-color: rgb(0, 0, 0);
+    /* Black fallback color */
+    background-color: rgba(0, 0, 0);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 4%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+
+    text-align: left;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+
+  /* The navigation links inside the overlay */
+  .mobileOverlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Circular Spotify Tx T Black", sans-serif;
+    color: #818181;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    z-index: 3;
+    /* Transition effects on hover (color) */
+  }
+
+  #navRule {
+    height: 20px !important;
+    width: auto !important;
+    color: white !important;
+  }
+
+  /* When you mouse over the navigation links, change their color */
+  .mt-0:hover {
+    color: var(--spot-green) !important;
+  }
+
+  #closebtnshak {
+    height: 20px;
+    width: auto;
+  }
+
+  /* Position the close button (top right corner) */
+  .mobileOverlay .closebtn {
+    position: absolute;
+    z-index: 4;
+    top: 1%;
+    right: 3%;
+    font-size: 30px;
+  }
+
+  .display-4 {
+    position: relative;
+    color: var(--spot-green);
+    font-weight: bolder;
+    font-size: 30px;
+    font-family: "Circular Spotify Tx T Black", sans-serif;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-top: 30vh;
+  }
+
+  .secondheadingmob {
+    position: relative;
+    color: var(--spot-green);
+    font-size: 15px;
+    font-family: "Circular Spotify Tx T Black", sans-serif;
+    margin-top: 2vh;
+    margin-right: 25vw;
+    margin-left: 25vw;
+    justify-content: space-around;
+  }
+
+  .getSpot {
+    color: rgb(43, 86, 204);
+  }
+
+  .titleMob {
+    color: gray;
+    font: bolder;
+    font-size: 10px;
+    font-family: "Circular Spotify Tx T Black", sans-serif;
+    margin-top: 30px;
+  }
+
+  .contMob {
+    font-size: 14px;
+  }
+
+  .socialBut {
+    width: 50px;
+    height: 50px;
+    padding: 6px 0px;
+    border-radius: 25px;
+    font-size: 8px;
+    text-align: center;
+  }
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .mobileOverlay a {
+    font-size: 20px;
+  }
+
+  .mobileOverlay .closebtn {
+    font-size: 40px;
+    font-family: "Circular Spotify Tx T Black", sans-serif;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .mobileOverlay a {
+    display: none;
+  }
+}
