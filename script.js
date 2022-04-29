@@ -17,7 +17,6 @@ $(document).ready(function () {
 });
 
 const $simpleCarousel = document.querySelector(".js-carousel--simple");
-
 new Glider($simpleCarousel, {
   slidesToShow: 1,
   slidesToScroll: 1,
@@ -27,7 +26,15 @@ new Glider($simpleCarousel, {
     prev: ".js-carousel--simple-prev",
     next: ".js-carousel--simple-next",
   },
-  // scrollLock: true,
-  // scrollLockDelay: 100,
-  // rewind: true,
 });
+
+function openNav() {
+  document.querySelector("#mobile-nav").style.width = "35%";
+}
+function closeNav() {
+  document.querySelector("#mobile-nav").style.width = "0%";
+}
+
+function onSubmit(token) {
+  document.getElementById("demo-form").submit();
+}

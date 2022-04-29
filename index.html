@@ -1,457 +1,493 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Plan - XP</title>
-  </head>
 
-  <body>
-    <div class="all__page">
-      <div class="sidebar">
-        <div>
-          <div class="sidebar__header">
-            <img
-              src="./images/Layer 1.svg"
-              alt="logo"
-              id="logo"
-              class="menu-anchor"
-            />
-            <nav class="sidebar__header--nav">
-              <a href="#o_que_fazemos_page" id="quem_somos"> /QUEM SOMOS</a>
-              <a href="#o_que_fazemos_page" id="o_que_fazemos">
-                /O QUE FAZEMOS</a
-              >
-              <a href="#contato_page" id="nossos_clientes"> /NOSSOS CLIENTES</a>
-              <a href="#plan_news_page" id="plan_news"> /PLAN NEWS</a>
-              <a href="#contato_page" id="contato"> /CONTATO</a>
-            </nav>
-          </div>
-          <div class="sidebar__header--bottom">
-            <p type="button" href="login.html">Que tal inovar com a gente?</p>
-            <a href="#">
-              <p class="items-seta">&#129134;</p>
-            </a>
-          </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Plan - XP</title>
+</head>
+
+<body>
+  <div class="all__page">
+    <header class="sidebar">
+      <div>
+        <div class="sidebar__header">
+          <img src="./images/logo.svg" alt="logo" id="logo" class="menu-anchor" />
+          <nav class="sidebar__header--nav">
+            <a href="#o_que_fazemos_page" id="quem_somos"> /QUEM SOMOS</a>
+            <a href="#o_que_fazemos_page" id="o_que_fazemos">
+              /O QUE FAZEMOS</a>
+            <a href="#contato_page" id="nossos_clientes"> /NOSSOS CLIENTES</a>
+            <a href="#plan_news_page" id="plan_news"> /PLAN NEWS</a>
+            <a href="#contato_page" id="contato"> /CONTATO</a>
+          </nav>
+        </div>
+        <div class="sidebar__header--bottom">
+          <p type="button" href="#">Que tal inovar com a gente?</p>
+          <a href="#"> &#129134;</a>
         </div>
       </div>
+    </header>
+    <div id="mobile-nav" class="mobile-overlay">
+      <div class="sidebar__header">
+        <a href="javascript:void(0)" id="closebtnshak" onclick="closeNav()">
+          &#129134;
+        </a>
+        <nav class="sidebar__header--nav">
+          <a href="#o_que_fazemos_page" id="quem_somos"> /QUEM SOMOS</a>
+          <a href="#o_que_fazemos_page" id="o_que_fazemos">
+            /O QUE FAZEMOS</a>
+          <a href="#contato_page" id="nossos_clientes"> /NOSSOS CLIENTES</a>
+          <a href="#plan_news_page" id="plan_news"> /PLAN NEWS</a>
+          <a href="#contato_page" id="contato"> /CONTATO</a>
+        </nav>
+      </div>
+      <div class="sidebar__header--bottom">
+        <p type="button" href="#">Que tal inovar com a gente?</p>
+        <a href="#"> &#129134;</a>
+      </div>
+    </div>
+    <div id="header-mobile">
+      <img class="mobile-logo" src="./images/logo.svg" alt="logo" />
+      <i class="fa fa-bars" style="font-size:46px" id="navBarOpen" onclick="openNav()"></i>
+    </div>
+  </div>
 
-
-      <header>
-        <img class="mobile-logo" src="./images/Layer 1.svg" alt="logo" />
-      </header>
-
-      <article class="c-carousel c-carousel--simple">
-        <div class="c-carousel__slides js-carousel--simple">
-          <article class="c-carousel__slide">
-            <div class="carousel-card">
-              <div id="card-carousel-1">
-                <img class="controll-top" src="./images/control.png" alt="" />
-              </div>
-              <div class="card-text--casesgames">
-                <div><p>TINTAS KILLING</p></div>
-                <p class="card-text--casesgames-header">
-                  Plan cria o novo site da SKA
-                </p>
-                <p class="card-text--casesgames-text">
-                  Aliquam ullamcorper augue a ligula aliquam rhoncus. Nullam
-                  accumsan auctor elementum Nam fermentum mattis ligula
-                  vulputate bibendum...
-                </p>
-              </div>
-            </div>
-          </article>
-          <article class="c-carousel__slide">
-            <div class="carousel-card">
-              <div id="card-carousel-2">
-                <img class="controll-top" src="./images/control.png" alt="" />
-              </div>
-              <div class="card-text--casesgames">
-                <div><p>TINTAS KILLING</p></div>
-                <p class="card-text--casesgames-header">
-                  Plan cria o novo site da SKA
-                </p>
-                <p class="card-text--casesgames-text">
-                  Aliquam ullamcorper augue a ligula aliquam rhoncus. Nullam
-                  accumsan auctor elementum Nam fermentum mattis ligula
-                  vulputate bibendum...
-                </p>
-              </div>
-            </div>
-          </article>
-          <article class="c-carousel__slide">
-            <div class="carousel-card">
-              <div id="card-carousel-3">
-                <img class="controll-top" src="./images/control.png" alt="" />
-              </div>
-              <div class="card-text--casesgames">
-                <div><p>TINTAS KILLING</p></div>
-                <p class="card-text--casesgames-header">
-                  Plan cria o novo site da SKA
-                </p>
-                <p class="card-text--casesgames-text">
-                  Aliquam ullamcorper augue a ligula aliquam rhoncus. Nullam
-                  accumsan auctor elementum Nam fermentum mattis ligula
-                  vulputate bibendum...
-                </p>
-              </div>
-            </div>
-          </article>
-          <article class="c-carousel__slide">
-            <div class="carousel-card">
-              <div id="card-carousel-4">
-                <img class="controll-top" src="./images/control.png" alt="" />
-              </div>
-              <div class="card-text--casesgames">
-                <div><p>TINTAS KILLING</p></div>
-                <p class="card-text--casesgames-header">
-                  Plan cria o novo site da SKA
-                </p>
-                <p class="card-text--casesgames-text">
-                  Aliquam ullamcorper augue a ligula aliquam rhoncus. Nullam
-                  accumsan auctor elementum Nam fermentum mattis ligula
-                  vulputate bibendum...
-                </p>
-              </div>
-            </div>
-          </article>
-          <article class="c-carousel__slide">
-            <div class="carousel-card">
-              <div id="card-carousel-5">
-                <img class="controll-top" src="./images/control.png" alt="" />
-              </div>
-              <div class="card-text--casesgames">
-                <div><p>TINTAS KILLING</p></div>
-                <p class="card-text--casesgames-header">
-                  Plan cria o novo site da SKA
-                </p>
-                <p class="card-text--casesgames-text">
-                  Aliquam ullamcorper augue a ligula aliquam rhoncus. Nullam
-                  accumsan auctor elementum Nam fermentum mattis ligula
-                  vulputate bibendum...
-                </p>
-              </div>
-            </div>
-          </article>
-        </div>
-        <div class="js-carousel--simple-dots" role="tablist"></div>
-      </article>
-
-      <div class="mainsection" id="o_que_fazemos_page">
-        <div class="mainsection__left--side">
-          <div class="breadcrumb" id="breadcrumb__games">
-            <p class="breadcrumb__top">/O que fazemos</p>
-            <h1 class="left__side--title">/Games</h1>
+  <article class="c-carousel c-carousel--simple" id="o_que_fazemos_page">
+    <div class="c-carousel__slides js-carousel--simple">
+      <article class="c-carousel__slide">
+        <div class="carousel-card">
+          <div id="card-carousel-1">
+            <img class="cellphone-icon" src="./images/cell-phone.svg" alt="" />
           </div>
-          <div class="left__side--text">
-            <h3 class="left__side--subtitle">
-              Desenvolvimento de games digitais.
-            </h3>
-            <h4 class="left__side--h4">
-              Empresa especialista em desenvolvimento games digitais e
-              gamificação.
-            </h4>
-            <p class="left__side--p">
+          <div class="card-text--casesgames">
+            <div>
+              <p>SKA</p>
+            </div>
+            <p class="carousel-card-textp">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              bibed um urna leo, at consectetur consectetur lorem viverra... </p>
+            <p class="card-text--casesgames-text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               aliquam ultricies sollicitudin. Cras vehicula congue odio, quis
               lobortis leo gravida non. In ornare erat tortor, mattis sodales
               leo efficitur at. In hac habitasse platea dictumst. Quisque ante
               tortor, egestas a lorem a, tempor lacinia nisi.
             </p>
+            <p>SAIBA MAIS &#129134;</p>
           </div>
         </div>
-        <div class="mainsection__right--side">
-          <div class="card-content">
-            <img class="image" src="./images/Layer 20.png" alt="Card image" />
-            <div class="card-text">
-              <p>
-                A <strong>PlanX</strong> tem uma equipe qualificada para o
-                <strong>desenvolvimento de jogos digitaisM</strong>
-                para
-                <strong>dispositivos móveis</strong> (smartphones, tablets e
-                afins).
-              </p>
+      </article>
+      <article class="c-carousel__slide">
+        <div class="carousel-card">
+          <div id="card-carousel-2">
+            <img class="cellphone-icon" src="./images/cell-phone.svg" alt="" />
+          </div>
+          <div class="card-text--casesgames">
+            <div>
+              <p>TINTAS KILLING</p>
+            </div>
+            <p class="carousel-card-textp">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              bibed um urna leo, at consectetur consectetur lorem viverra... </p>
+            <p class="card-text--casesgames-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              aliquam ultricies sollicitudin. Cras vehicula congue odio, quis
+              lobortis leo gravida non. In ornare erat tortor, mattis sodales
+              leo efficitur at. In hac habitasse platea dictumst. Quisque ante
+              tortor, egestas a lorem a, tempor lacinia nisi.
+            </p>
+            <p>SAIBA MAIS &#129134;</p>
+          </div>
+        </div>
+      </article>
+      <article class="c-carousel__slide">
+        <div class="carousel-card">
+          <div id="card-carousel-3">
+            <img class="cellphone-icon" src="./images/cell-phone.svg" alt="" />
+          </div>
+          <div class="card-text--casesgames">
+            <div>
+              <p>CARGO BR</p>
+            </div>
+            <p class="carousel-card-textp">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              bibed um urna leo, at consectetur consectetur lorem viverra... </p>
+            <p class="card-text--casesgames-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              aliquam ultricies sollicitudin. Cras vehicula congue odio, quis
+              lobortis leo gravida non. In ornare erat tortor, mattis sodales
+              leo efficitur at. In hac habitasse platea dictumst. Quisque ante
+              tortor, egestas a lorem a, tempor lacinia nisi.
+            </p>
+            <p>SAIBA MAIS &#129134;</p>
+          </div>
+        </div>
+      </article>
+      <article class="c-carousel__slide">
+        <div class="carousel-card">
+          <div id="card-carousel-4">
+            <img class="cellphone-icon" src="./images/cell-phone.svg" alt="" />
+          </div>
+          <div class="card-text--casesgames">
+            <div>
+              <p>XALINGO</p>
+            </div>
+            <p class="carousel-card-textp">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              bibed um urna leo, at consectetur consectetur lorem viverra... </p>
+            <p class="card-text--casesgames-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              aliquam ultricies sollicitudin. Cras vehicula congue odio, quis
+              lobortis leo gravida non. In ornare erat tortor, mattis sodales
+              leo efficitur at. In hac habitasse platea dictumst. Quisque ante
+              tortor, egestas a lorem a, tempor lacinia nisi.
+            </p>
+            <p>SAIBA MAIS &#129134;</p>
+          </div>
+        </div>
+      </article>
+      <article class="c-carousel__slide">
+        <div class="carousel-card">
+          <div id="card-carousel-5">
+            <img class="cellphone-icon" src="./images/cell-phone.svg" alt="" />
+          </div>
+          <div class="card-text--casesgames">
+            <div>
+              <p>AROMATIC</p>
+            </div>
+            <p class="carousel-card-textp">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              bibed um urna leo, at consectetur consectetur lorem viverra... </p>
+            <p class="card-text--casesgames-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              aliquam ultricies sollicitudin. Cras vehicula congue odio, quis
+              lobortis leo gravida non. In ornare erat tortor, mattis sodales
+              leo efficitur at. In hac habitasse platea dictumst. Quisque ante
+              tortor, egestas a lorem a, tempor lacinia nisi.
+            </p>
+            <p>SAIBA MAIS &#129134;</p>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="js-carousel--simple-dots" role="tablist"></div>
+  </article>
+
+  <div class="mainsection" id="o_que_fazemos_page">
+    <div class="mainsection__left--side">
+      <div class="breadcrumb" id="breadcrumb__games">
+        <p class="breadcrumb__top">/O que fazemos</p>
+        <h1 class="left__side--title">/Games</h1>
+      </div>
+      <div class="left__side--text">
+        <h3 class="left__side--subtitle">
+          Desenvolvimento de games digitais.
+        </h3>
+        <h4 class="left__side--h4">
+          Empresa especialista em desenvolvimento games digitais e
+          gamificação.
+        </h4>
+        <p class="left__side--p">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          aliquam ultricies sollicitudin. Cras vehicula congue odio, quis
+          lobortis leo gravida non. In ornare erat tortor, mattis sodales
+          leo efficitur at. In hac habitasse platea dictumst. Quisque ante
+          tortor, egestas a lorem a, tempor lacinia nisi.
+        </p>
+      </div>
+    </div>
+    <div class="mainsection__right--side">
+      <div class="card-content">
+        <img class="image" src="./images/cardmain1.png" alt="Card image" />
+        <div class="card-text">
+          <p>
+            A <strong>PlanX</strong> tem uma equipe qualificada para o
+            <strong>desenvolvimento de jogos digitaisM</strong>
+            para
+            <strong>dispositivos móveis</strong> (smartphones, tablets e
+            afins).
+          </p>
+        </div>
+      </div>
+      <div class="card-content">
+        <img class="image" src="./images/cardmain2.png" alt="Card image" />
+        <div class="card-text">
+          <p>
+            Desenvolvemos games para anunciar seus produtos e serviços,
+            através da
+            <strong>gamificação</strong>
+            (aplicações que utilizam dinâmicas de jogos para engajamento de
+            usuários, resolução de problemas e melhoria no aprendizado).
+          </p>
+        </div>
+      </div>
+      <div class="card-content">
+        <img class="image" src="./images/cardmain3.png" alt="Card image" />
+        <div class="card-text">
+          <p>
+            Utilizando as últimas tecnologias para a
+            <strong>criação de games</strong>, trabalhamos de acordo com as
+            necessidades dos clientes, sempre buscando oferecer o resultado
+            que ele busca.
+          </p>
+        </div>
+      </div>
+      <div class="card-content">
+        <div id="card__image--games" alt="Card image"></div>
+        <div class="card-text">
+          <p class="c">
+            Experimente inovar com a <strong>PlanXP</strong> para
+            <strong>desenvolver os seus jogos digitais!</strong>
+          </p>
+          <p>Entre em contato agora mesmo</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mainsection__casesgames" id="plan_news_page">
+    <div class="mainsection__casesgames--text">
+      <div class="breadcrumb__casesgames" id="breadcrumb__casesgames">
+        <p class="breadcrumb__top">/Plan news</p>
+        <div class="title_text">
+          <h1 class="left__side--title">/Cases Games</h1>
+          <p class="left__side--casesgamestext">
+            Desenvolvimento de games digitais.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="mainsection__casesgames-cards">
+      <div class="card__content--casesgames">
+        <div id="card1">
+          <img class="controll-top" src="./images/control.png" alt="" />
+        </div>
+        <div class="card-text--casesgames">
+          <div>
+            <p>SKA</p>
+          </div>
+          <p class="card-text--casesgames-header">
+            Plan cria o novo site da SKA
+          </p>
+          <p class="card-text--casesgames-text">
+            Aliquam ullamcorper augue a ligula aliquam rhoncus. Nullam
+            accumsan auctor elementum Nam fermentum mattis ligula vulputate
+            bibendum...
+          </p>
+        </div>
+      </div>
+      <div class="card__content--casesgames">
+        <div id="card2">
+          <img class="controll-top" src="./images/control.png" alt="" />
+        </div>
+        <div class="card-text--casesgames">
+          <div>
+            <p>TINTAS KILLING</p>
+          </div>
+          <p class="card-text--casesgames-header">
+            Plan cria o novo site da SKA
+          </p>
+          <p class="card-text--casesgames-text">
+            Aliquam ullamcorper augue a ligula aliquam rhoncus. Nullam
+            accumsan auctor elementum Nam fermentum mattis ligula vulputate
+            bibendum...
+          </p>
+        </div>
+      </div>
+      <div class="card__content--casesgames">
+        <div id="card3">
+          <img class="controll-top" src="./images/control.png" alt="" />
+        </div>
+        <div class="card-text--casesgames">
+          <div>
+            <p>CARGO BR</p>
+          </div>
+          <p class="card-text--casesgames-header">
+            Plan cria o novo site da SKA
+          </p>
+          <p class="card-text--casesgames-text">
+            Aliquam ullamcorper augue a ligula aliquam rhoncus. Nullam
+            accumsan auctor elementum Nam ferment...
+          </p>
+        </div>
+      </div>
+      <div class="card__content--casesgames">
+        <div id="card4">
+          <img class="controll-top" src="./images/control.png" alt="" />
+        </div>
+        <div class="card-text--casesgames">
+          <div>
+            <p>XALINGO</p>
+          </div>
+          <p class="card-text--casesgames-header">
+            Plan cria o novo site da SKA
+          </p>
+          <p class="card-text--casesgames-text">
+            Curabitur vitae tellus volutpat, imperdiet est nec, efficitur
+            mi. Cras pellentesque ultricies diam at dictum. Cras
+            pellentesque...
+          </p>
+        </div>
+      </div>
+      <div class="card__content--casesgames">
+        <div id="card5">
+          <img class="controll-top" src="./images/control.png" alt="" />
+        </div>
+        <div class="card-text--casesgames">
+          <div>
+            <p>AROMATIC</p>
+          </div>
+          <p class="card-text--casesgames-header">
+            Plan cria o novo site da SKA
+          </p>
+          <p class="card-text--casesgames-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            bibed um urna leo, at consectetur consectetur lorem viverra...
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mainsection_contato" id="contato_page">
+    <div class="mainsection__left--side">
+      <div class="mainsection__contato">
+        <div class="breadcrumb" id="breadcrumb__contact">
+          <p class="breadcrumb__top">/Contato</p>
+          <h1 class="left__side--title">/Contato</h1>
+        </div>
+        <div class="left__side--text">
+          <p class="left__side--p--contato">
+            Gostou de saber mais sobre as inovações tecnológicas e também
+            quer oferecer novas experiências aos seus clientes? Então entre
+            em contato e marque um encontro real conosco para conversamos
+            sobre as infinitas possibilidades do mundo virtual.
+          </p>
+        </div>
+
+        <div class="form">
+          <form action="/">
+            <label for="fname">Nome</label>
+            <input type="text" id="fname" />
+            <div class="inline-form">
+              <div>
+                <label for="lname">E-mail</label>
+                <input type="text" id="lname" />
+              </div>
+              <div>
+                <label for="lname">Telefone</label>
+                <input type="text" id="lname" />
+              </div>
+            </div>
+            <label for="subject">Mensagem:</label>
+            <textarea id="subject" rows="5"></textarea>
+            <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'
+              data-action='submit'>Submit</button>
+            <input type="submit" value="ENVIAR &#129134;">
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="mainsection__right--side-contato">
+      <div class="mainsection__right--side--top">
+        <div class="card-content">
+          <p class="card-contato-h2">Siga-nos</p>
+          <div class="card-text">
+            <p>
+              Fique sempre por dentro de todas as novidades da Plan XP e de
+              todas empresas do Grupo Plan Marketing.
+            </p>
+            <div class="icons">
+              <img src="./images/face.png" alt="" />
+              <img src="./images/insta.png" alt="" />
+              <img src="./images/youtube.png" alt="" />
             </div>
           </div>
-          <div class="card-content">
-            <img class="image" src="./images/Layer 22.png" alt="Card image" />
-            <div class="card-text">
-              <p>
-                Desenvolvemos games para anunciar seus produtos e serviços,
-                através da
-                <strong>gamificação</strong>
-                (aplicações que utilizam dinâmicas de jogos para engajamento de
-                usuários, resolução de problemas e melhoria no aprendizado).
-              </p>
-            </div>
+        </div>
+        <div class="card-content">
+          <p class="card-contato-h2">
+            <img src="./images/map.png" id="map-icon" alt="" />/RS
+          </p>
+          <div class="card-text">
+            <p>
+              Rua Onze de Junho, 243 Novo Hamburgo / RS Brasil +55 51
+              98229.0400
+            </p>
+            <p>VER NO GOOGLE MAPS &#129134;</p>
           </div>
-          <div class="card-content">
-            <img class="image" src="./images/Layer 21.png" alt="Card image" />
-            <div class="card-text">
-              <p>
-                Utilizando as últimas tecnologias para a
-                <strong>criação de games</strong>, trabalhamos de acordo com as
-                necessidades dos clientes, sempre buscando oferecer o resultado
-                que ele busca.
-              </p>
-            </div>
-          </div>
-          <div class="card-content">
-            <div id="card__image--games" alt="Card image"></div>
-            <div class="card-text">
-              <p class="c">
-                Experimente inovar com a <strong>PlanXP</strong> para
-                <strong>desenvolver os seus jogos digitais!</strong>
-              </p>
-              <p>Entre em contato agora mesmo</p>
-            </div>
+        </div>
+        <div class="card-content">
+          <p class="card-contato-h2">
+            <img src="./images/map.png" id="map-icon" alt="" />/RS
+          </p>
+          <div class="card-text">
+            <p>
+              Rua Ibijaú, 355/Sala 1309 São Paulo / SP Brasil +55 11
+              98871.8556
+            </p>
+            <p>VER NO GOOGLE MAPS &#129134;</p>
           </div>
         </div>
       </div>
 
-      <div class="mainsection__casesgames" id="plan_news_page">
-        <div class="mainsection__casesgames--text">
-          <div class="breadcrumb__casesgames" id="breadcrumb__casesgames">
-            <p class="breadcrumb__top">/Plan news</p>
-            <div class="title_text">
-              <h1 class="left__side--title">/Cases Games</h1>
-              <p class="left__side--casesgamestext">
-                Desenvolvimento de games digitais.
-              </p>
-            </div>
+      <div class="mainsection__right--side--bottom">
+        <div class="">
+          <p class="card-contato-h2">
+            <img src="./images/grupoplan.png" alt="" />
+          </p>
+          <div class="card-text">
+            <p>
+              A Plan faz parte do Grupo Plan Marketing, um grupo de
+              comunicação completo.
+            </p>
+            <p>CONHEÇA &#129134;</p>
           </div>
         </div>
-        <div class="mainsection__casesgames-cards">
-          <div class="card__content--casesgames">
-            <div id="card1">
-              <img class="controll-top" src="./images/control.png" alt="" />
-            </div>
-            <div class="card-text--casesgames">
-              <div><p>SKA</p></div>
-              <p class="card-text--casesgames-header">
-                Plan cria o novo site da SKA
-              </p>
-              <p class="card-text--casesgames-text">
-                Aliquam ullamcorper augue a ligula aliquam rhoncus. Nullam
-                accumsan auctor elementum Nam fermentum mattis ligula vulputate
-                bibendum...
-              </p>
-            </div>
-          </div>
-          <div class="card__content--casesgames">
-            <div id="card2">
-              <img class="controll-top" src="./images/control.png" alt="" />
-            </div>
-            <div class="card-text--casesgames">
-              <div><p>TINTAS KILLING</p></div>
-              <p class="card-text--casesgames-header">
-                Plan cria o novo site da SKA
-              </p>
-              <p class="card-text--casesgames-text">
-                Aliquam ullamcorper augue a ligula aliquam rhoncus. Nullam
-                accumsan auctor elementum Nam fermentum mattis ligula vulputate
-                bibendum...
-              </p>
-            </div>
-          </div>
-          <div class="card__content--casesgames">
-            <div id="card3">
-              <img class="controll-top" src="./images/control.png" alt="" />
-            </div>
-            <div class="card-text--casesgames">
-              <div><p>CARGO BR</p></div>
-              <p class="card-text--casesgames-header">
-                Plan cria o novo site da SKA
-              </p>
-              <p class="card-text--casesgames-text">
-                Aliquam ullamcorper augue a ligula aliquam rhoncus. Nullam
-                accumsan auctor elementum Nam ferment...
-              </p>
-            </div>
-          </div>
-          <div class="card__content--casesgames">
-            <div id="card4">
-              <img class="controll-top" src="./images/control.png" alt="" />
-            </div>
-            <div class="card-text--casesgames">
-              <div><p>XALINGO</p></div>
-              <p class="card-text--casesgames-header">
-                Plan cria o novo site da SKA
-              </p>
-              <p class="card-text--casesgames-text">
-                Curabitur vitae tellus volutpat, imperdiet est nec, efficitur
-                mi. Cras pellentesque ultricies diam at dictum. Cras
-                pellentesque...
-              </p>
-            </div>
-          </div>
-          <div class="card__content--casesgames">
-            <div id="card5">
-              <img class="controll-top" src="./images/control.png" alt="" />
-            </div>
-            <div class="card-text--casesgames">
-              <div><p>AROMATIC</p></div>
-              <p class="card-text--casesgames-header">
-                Plan cria o novo site da SKA
-              </p>
-              <p class="card-text--casesgames-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                bibed um urna leo, at consectetur consectetur lorem viverra...
-              </p>
-            </div>
+        <div class="">
+          <p class="card-contato-h2">
+            <img src="./images/logo.svg" alt="" />
+          </p>
+          <div class="card-text">
+            <p>
+              A Plan XP é especializada em realidade virtual, realidade
+              aumentada e jogos.
+            </p>
+            <p>CONHEÇA &#129134;</p>
           </div>
         </div>
-      </div>
-
-      <div class="mainsection" id="contato_page">
-        <div class="mainsection__left--side">
-          <div class="mainsection__contato">
-            <div class="breadcrumb" id="breadcrumb__contact">
-              <p class="breadcrumb__top">/Contato</p>
-              <h1 class="left__side--title">/Contato</h1>
-            </div>
-            <div class="left__side--text">
-              <p class="left__side--p--contato">
-                Gostou de saber mais sobre as inovações tecnológicas e também
-                quer oferecer novas experiências aos seus clientes? Então entre
-                em contato e marque um encontro real conosco para conversamos
-                sobre as infinitas possibilidades do mundo virtual.
-              </p>
-            </div>
-
-            <div class="form">
-              <form action="/">
-                <label for="fname">Nome</label>
-                <input type="text" id="fname" />
-                <div class="inline-form">
-                  <div>
-                    <label for="lname">E-mail</label>
-                    <input type="text" id="lname" />
-                  </div>
-                  <div>
-                    <label for="lname">Telefone</label>
-                    <input type="text" id="lname" />
-                  </div>
-                </div>
-                <label for="subject">Mensagem:</label>
-                <textarea id="subject" rows="5"></textarea>
-
-                <input type="submit" value="Submit" />
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="mainsection__right--side-contato">
-          <div class="mainsection__right--side--top">
-            <div class="card-content">
-              <p class="card-contato-h2">Siga-nos</p>
-              <div class="card-text">
-                <p>
-                  Fique sempre por dentro de todas as novidades da Plan XP e de
-                  todas empresas do Grupo Plan Marketing.
-                </p>
-                <div class="icons">
-                  <img src="./images/face.png" alt="" />
-                  <img src="./images/insta.png" alt="" />
-                  <img src="./images/youtube.png" alt="" />
-                </div>
-              </div>
-            </div>
-            <div class="card-content">
-              <p class="card-contato-h2">
-                <img src="./images/map.png" id="map-icon" alt="" />/RS
-              </p>
-              <div class="card-text">
-                <p>
-                  Rua Onze de Junho, 243 Novo Hamburgo / RS Brasil +55 51
-                  98229.0400
-                </p>
-                <p>VER NO GOOGLE MAPS &#129134;</p>
-              </div>
-            </div>
-            <div class="card-content">
-              <p class="card-contato-h2">
-                <img src="./images/map.png" id="map-icon" alt="" />/RS
-              </p>
-              <div class="card-text">
-                <p>
-                  Rua Ibijaú, 355/Sala 1309 São Paulo / SP Brasil +55 11
-                  98871.8556
-                </p>
-                <p>VER NO GOOGLE MAPS &#129134;</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="mainsection__right--side--bottom">
-            <div class="">
-              <p class="card-contato-h2">
-                <img src="./images/Vector Smart Object1.png" alt="" />
-              </p>
-              <div class="card-text">
-                <p>
-                  A Plan faz parte do Grupo Plan Marketing, um grupo de
-                  comunicação completo.
-                </p>
-                <p>CONHEÇA &#129134;</p>
-              </div>
-            </div>
-            <div class="">
-              <p class="card-contato-h2">
-                <img src="./images/Layer 1.svg" alt="" />
-              </p>
-              <div class="card-text">
-                <p>
-                  A Plan XP é especializada em realidade virtual, realidade
-                  aumentada e jogos.
-                </p>
-                <p>CONHEÇA &#129134;</p>
-              </div>
-            </div>
-            <div class="">
-              <p class="card-contato-h2">
-                <img src="./images/full.png" alt="" />
-              </p>
-              <div class="card-text">
-                <p>
-                  A FullUp é uma agência especializada em branding, design e
-                  campanhas.
-                </p>
-                <p>CONHEÇA &#129134;</p>
-              </div>
-            </div>
+        <div class="">
+          <p class="card-contato-h2">
+            <img src="./images/full.png" alt="" />
+          </p>
+          <div class="card-text">
+            <p>
+              A FullUp é uma agência especializada em branding, design e
+              campanhas.
+            </p>
+            <p>CONHEÇA &#129134;</p>
           </div>
         </div>
       </div>
     </div>
+  </div>
+  </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script></script>
-    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script></script>
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,42 @@
+:root {
+    --backg-black: rgb(30, 30, 30);
+    --backg-white: rgb(255, 255, 255);
+}
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--backg-white);
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--backg-black);
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    margin: 0;
+}
+
+input,
+a,
+textarea,
+select,
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media (max-width: 1080px) {
+    html {
+        font-size: 93.75%;
+    }
+}
+
+@media (max-width: 720px) {
+    html {
+        font-size: 87.5%;
+    }
+}

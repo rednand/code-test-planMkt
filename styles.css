@@ -1,44 +1,6 @@
-:root {
-  --spot-green: #1db954;
-  --spot-black: rgb(30, 30, 30);
-  --spot-blue-grad: rgb(37, 69, 108);
-  --spot-transp: rgba(39, 55, 95, 0.2);
-  --spot-blue: rgb(39, 55, 95);
-  --dark-gray: #241d1d;
-}
-
-@import url(//db.onlinewebfonts.com/c/01173b246d9d9ea808ea75a26b3b61bb?family=Circular+Spotify+Tx+T+Black);
-
-@font-face {
-  font-family: "Circular Tx T Black";
-  src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot");
-  src: url("//db.onlinewebfonts.com/t/01173b246d9d9ea808ea75a26b3b61bb.eot?#iefix")
-    format("embedded-opentype");
-}
-
-body {
-  background-color: var(--spot-black);
-  width: 100%;
-  margin: 0;
-}
-
-* {
-  font-family: "Montserrat", sans-serif;
-  margin: 0;
-  color: white;
-}
-
-/* **************** SIDE NAV ********************** */
-
-.c-carousel--simple {
+/* ****************  HEADER ********************** */
+#header-mobile {
   display: none;
-}
-.mobile-logo {
-  display: none;
-}
-.all__page {
-  width: 100%;
-  margin: 0;
 }
 
 .sidebar {
@@ -47,21 +9,14 @@ body {
   text-align: start;
   position: fixed;
   z-index: 1;
-  margin: 0;
   border-right: 2px solid #292929;
 }
 
 #logo {
-  margin-top: 15% !important;
-  margin-left: 15% !important;
-  justify-content: center;
-  display: flex;
-  padding-left: 5px;
-  padding-bottom: 15px;
-  width: 120px;
+  margin: 15% !important;
+  width: 65%;
   cursor: pointer;
   image-rendering: optimizeQuality;
-  color: rgb(177, 172, 172);
 }
 
 .sidebar a:first-child {
@@ -69,14 +24,10 @@ body {
 }
 
 .sidebar a {
-  text-align: start;
-  margin-left: 10%;
+  margin: 10%;
   display: block;
-  margin-top: 10%;
   cursor: pointer;
-  font-size: 15px;
-  color: #ffffff;
-  font-weight: 400;
+  font-size: 1.5ch;
   padding: 10% 0;
 }
 
@@ -105,27 +56,28 @@ body {
   background-position: 0% 50%;
 }
 
-.sidebar__header--bottom {
+.sidebar__header {
   position: relative;
-  margin: 50% 0 0 0;
+}
+
+.sidebar__header--bottom {
   width: 100%;
-  height: 150px;
+  height: 17ch;
+  position: absolute;
+  top: 80%;
   background: url("./images/;\).svg") no-repeat;
-  background-position: 10% 45%;
+  background-position: 10% 50%;
   border-top: 2px solid #292929;
 }
 
 .sidebar__header--bottom p {
-  cursor: pointer;
-  padding: 28% 10%;
-  position: absolute;
-  top: 1%;
+  padding: 35% 10%;
 }
 
 .sidebar__header--bottom a {
-  cursor: pointer;
-  position: relative;
-  left: 70%;
+  position: absolute;
+  top: 70%;
+  left: 80%;
 }
 
 .items-seta {
@@ -136,27 +88,104 @@ body {
   color: #fff;
 }
 
-.mainsection {
-  padding: 12% 0 0 16%;
-  width: 77%;
-  min-height: 100vh;
-  display: inline-flex;
+/* ****************  HEADER ********************** */
+
+/* ****************  CARROSSEL ********************** */
+.c-carousel--simple {
+  display: none;
 }
 
-.mainsection__left--side {
-  width: 50%;
+.carousel-card {
+  min-height: 100vh;
+  width: 100%;
 }
+
+.carousel-card {
+  position: relative;
+}
+
+.carousel-card-textp {
+  font-size: 2ch;
+  margin: 5% 0;
+}
+
+.js-carousel--simple-dots {
+  position: absolute;
+  top: 55%;
+  width: 100%;
+}
+
+#card-carousel-1,
+#card-carousel-2,
+#card-carousel-3,
+#card-carousel-4,
+#card-carousel-5 {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  background-color: black;
+}
+
+#card-carousel-1::after,
+#card-carousel-2::after,
+#card-carousel-3::after,
+#card-carousel-4::after,
+#card-carousel-5::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  right: 0%;
+  top: -40%;
+  height: 300px;
+  background-color: var(--backg-black);
+  transform: rotate(-45deg);
+  transform-origin: right top;
+}
+
+#card-carousel-1 {
+  background: url("./images/ska.png") no-repeat;
+  background-size: cover;
+  background-position: 10% 90%;
+}
+
+#card-carousel-2 {
+  background: url("./images/killing.png") no-repeat;
+  background-size: cover;
+  background-position: 10% 90%;
+}
+
+#card-carousel-3 {
+  background: url("./images/cargobr.png") no-repeat;
+  background-size: cover;
+  background-position: 10% 90%;
+}
+
+#card-carousel-4 {
+  background: url("./images/xalingo.png") no-repeat;
+  background-size: cover;
+  background-position: 10% 90%;
+}
+
+#card-carousel-5 {
+  background: url("./images/aromatic.png") no-repeat;
+  background-size: cover;
+  background-position: 5% 35%;
+}
+
+.cellphone-icon {
+  width: 5ch;
+  position: absolute;
+  left: 90%;
+  top: 1%;
+  z-index: 1;
+}
+
+/* ****************  CARROSSEL ********************** */
+
+/* ****************  MAIN ********************** */
 
 .breadcrumb__top {
-  font-size: 14px;
-  color: #ffffff;
-  font-weight: 400;
-}
-
-#breadcrumb__games {
-  background: url("./images/02..svg") no-repeat;
-  background-position: 0% 50%;
-  background-size: contain;
+  font-size: 1.2ch;
 }
 
 #breadcrumb__casesgames {
@@ -171,40 +200,39 @@ body {
   background-size: contain;
 }
 
+.mainsection,
+.mainsection_contato {
+  padding: 13% 0 0 16%;
+  width: 91%;
+  min-height: 100vh;
+  display: inline-flex;
+}
+
+.mainsection__left--side {
+  width: 50%;
+}
+
 .left__side--title {
-  font-size: 37px;
+  font-size: 4ch;
   color: #939598;
 }
 
 .left__side--subtitle {
-  font-size: 25px;
+  font-size: 2.2ch;
   margin: 3% 0;
   color: #939598;
-  font-weight: 400;
 }
 
 .left__side--h4 {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1.7ch;
   color: #a3a3a3;
-  font-weight: 400;
 }
 
 .left__side--p {
   margin: 3% 0;
   width: 90%;
-  height: 138px;
-  font-size: 13px;
-  line-height: 26px;
-  color: #ffffff;
-  font-weight: 400;
-}
-
-.left__side--p--contato {
-  width: 90%;
-  margin-top: 3%;
-  font-size: 13px;
-  line-height: 25px;
+  font-size: 1.2ch;
+  line-height: 4ch;
 }
 
 .mainsection__right--side {
@@ -212,16 +240,6 @@ body {
   flex-direction: row;
   justify-content: space-between;
   width: 40%;
-  margin: 0 1%;
-  flex: 1;
-}
-
-.mainsection__right--side-contato {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  height: 25%;
-  width: 100%;
   margin: 0 1%;
   flex: 1;
 }
@@ -242,8 +260,6 @@ body {
   width: 98%;
 }
 
-/*CASES-GAMES*/
-
 .image {
   display: flex;
   width: 10vw;
@@ -252,18 +268,17 @@ body {
   object-fit: cover;
 }
 
-.mainsection__casesgames {
-  padding: 12% 0 0 16%;
-  width: 79%;
-  min-height: 100vh;
-  display: inline-block;
+#breadcrumb__games {
+  background: url("./images/02..svg") no-repeat;
+  background-position: 0% 50%;
+  background-size: contain;
 }
 
-.left__side--text {
-  height: 1rem;
-  font-size: 12px;
-  color: #939598;
-  font-weight: 400;
+.mainsection__casesgames {
+  padding: 13% 0 0 16%;
+  width: 95%;
+  min-height: 100vh;
+  display: inline-block;
 }
 
 .left__side--casesgamestext {
@@ -294,6 +309,7 @@ body {
   background-color: #292929;
   margin-right: 1%;
 }
+
 .card-text--casesgames {
   padding: 6%;
 }
@@ -305,27 +321,22 @@ body {
 }
 
 .card-text--casesgames div p {
-  font-size: 12px;
+  font-size: 1.2ch;
   color: #1e1e1e;
   font-weight: 900;
 }
 
 .card-text--casesgames-text {
   margin-top: 5%;
-  width: 100%;
-  font-size: 13px;
-  line-height: 26px;
-  color: #ffffff;
-  font-weight: 300;
-  text-align: start;
+  font-size: 1.3ch;
+  line-height: 3.5ch;
 }
 
 .card-text--casesgames-header {
-  margin-top: 5%;
-  height: 50px;
-  font-size: 20px;
+  margin-top: 8%;
+  height: 4ch;
+  font-size: 2ch;
   color: #939598;
-  font-weight: 400;
 }
 
 #card1,
@@ -357,33 +368,39 @@ body {
   transform: rotate(45deg);
   transform-origin: right top;
 }
+
 #card1 {
-  background: url("./images/softeng.png") no-repeat;
+  background: url("./images/ska.png") no-repeat;
   background-size: 120%;
   background-position: 0% 0%;
 }
+
 #card2 {
-  background: url("./images/Background2.png") no-repeat;
+  background: url("./images/killing.png") no-repeat;
   background-size: 100%;
   background-position: 10% 90%;
 }
+
 #card3 {
-  background: url("./images/Layer\ 19.png") no-repeat;
+  background: url("./images/cargobr.png") no-repeat;
   background-size: 150%;
   background-position: 0% 0%;
 }
+
 #card4 {
-  background: url("./images/Layer\ 10.png") no-repeat;
+  background: url("./images/xalingo.png") no-repeat;
   background-size: 100%;
   background-position: 15% 0%;
 }
+
 #card5 {
-  background: url("./images/food.png") no-repeat;
+  background: url("./images/aromatic.png") no-repeat;
   background-size: 120%;
   background-position: 20% 60%;
 }
+
 #card__image--games {
-  background: url("./images/Shape 4.png") no-repeat;
+  background: url("./images/control1.png") no-repeat;
   background-position: 0 90%;
   display: flex;
   width: 10vw;
@@ -401,80 +418,40 @@ body {
 .card-text p {
   margin-top: 15%;
   width: 100%;
-  font-size: 13px;
-  line-height: 26px;
-  color: #ffffff;
-  font-weight: 300;
-  text-align: start;
+  font-size: 1.2ch;
+  line-height: 3ch;
 }
 
-/*CONTACT PAGE*/
-
-.left__side--title-contato {
-  height: 10rem;
-  font-size: 37px;
-  color: #939598;
+.left__side--p--contato {
+  width: 100%;
+  margin-top: 3%;
+  font-size: 1.2ch;
+  line-height: 4ch;
 }
 
 .mainsection__contato {
   width: 80%;
 }
 
-input[type="text"],
-textarea {
-  background-color: #1e1e1e;
-  border: 1px solid #464646;
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type="submit"] {
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #4e514f;
-}
-
-.inline-form {
-  display: inline-flex;
-}
-
-.inline-form div:first-child {
-  margin-right: 10%;
-}
-
-.inline-form input[type="text"] {
+.mainsection__right--side-contato {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 25%;
   width: 100%;
+  margin: 0 1%;
+  flex: 1;
 }
 
-.form {
-  margin-top: 20%;
-  padding: 20px 0;
-}
-
-.card-contato-h2 {
-  height: 2rem;
-  width: 191px;
-  font-size: 20px;
-  color: #939598;
-}
 .card-contato-h2 img {
   width: 45%;
 }
 
 #map-icon {
-  width: 12px;
-  padding: 2%;
+  width: 1.3ch;
+  padding: 0 1%;
 }
+
 .icons {
   margin: 10% 0;
   width: 80%;
@@ -486,98 +463,227 @@ input[type="submit"]:hover {
   width: 26%;
 }
 
-/**/
-/**/
-/*MOBILE*/
-@media (max-width: 700px) {
+/* ****************  MAIN ********************** */
+
+/* ****************  FORM ********************** */
+input[type="text"],
+textarea {
+  background-color: var(--backg-black);
+  border: 1px solid #464646;
+  width: 100%;
+  padding: 1ch;
+  box-sizing: border-box;
+  margin-bottom: 3ch;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  padding: 1ch;
+  border: none;
+}
+
+input[type="submit"] {
+  background-color: transparent;
+}
+
+input[type="submit"]:hover {
+  background-color: #4e514f;
+}
+
+.inline-form {
+  display: inline-flex;
+  width: 100%;
+}
+
+.inline-form div:first-child {
+  margin-right: 10%;
+}
+
+.inline-form input[type="text"] {
+  width: 100%;
+}
+
+.form {
+  margin-top: 5%;
+}
+
+.card-contato-h2 {
+  height: 2rem;
+  width: 191px;
+  font-size: 20px;
+  color: #939598;
+}
+
+
+
+/* ****************  FORM ********************** */
+
+@media screen and (max-width: 1200px) {
+
   .mainsection,
-  .mainsection__casesgames,
+  .mainsection_contato {
+    display: inline-block;
+  }
+
+  .inline-form {
+    display: block;
+    width: 100%;
+  }
+
+  .inline-form div:first-child {
+    margin-right: 0%;
+  }
+
+  .mainsection__right--side-contato {
+    margin: 15% 0;
+  }
+
+  .mainsection__casesgames {
+    width: 100%;
+  }
+
+  .mainsection__left--side {
+    width: 100%;
+  }
+
+  .mainsection__right--side {
+    width: 100%;
+  }
+
+  .image {
+    width: 16ch;
+  }
+
+  #card1,
+  #card2,
+  #card3,
+  #card4,
+  #card5 {
+    background-size: cover;
+  }
+
+  #card1::after,
+  #card2::after,
+  #card3::after,
+  #card4::after,
+  #card5::after {
+    right: -90%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+  #card1::after,
+  #card2::after,
+  #card3::after,
+  #card4::after,
+  #card5::after {
+    right: -120%;
+  }
+}
+
+
+
+/* ***************  MOBILE ********************** */
+
+#header-mobile,
+#mobile-nav {
+  display: none;
+}
+
+#navBarOpen {
+  height: 50px;
+  width: auto;
+}
+
+@media screen and (max-width: 769px) {
+  .all__page {
+    width: 100%;
+  }
+
+  #header-mobile {
+    margin: 0 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #header-mobile img {
+    width: 10ch;
+  }
+
+  #mobile-nav {
+    display: inline;
+  }
+
+  .mainsection__casesgames {
+    padding: 10% 2%;
+    width: 100%;
+    min-height: 100%;
+    display: inline-block;
+  }
+
+  .mainsection__casesgames-cards {
+    display: inline-block;
+    justify-content: space-between;
+  }
+
+  .card__content--casesgames {
+    width: 45%;
+    margin: 5% 2.5%;
+    height: 15%;
+    float: right;
+    background-color: #292929;
+  }
+
+
+
+  #card1::after,
+  #card2::after,
+  #card3::after,
+  #card4::after,
+  #card5::after {
+    right: -50%;
+  }
+
+  .mainsection,
+  .mainsection_contato,
   .sidebar {
     display: none;
   }
+
   .c-carousel--simple {
     display: inline;
   }
-  .mobile-logo {
-    display: inline-flex;
+
+  .mobile-overlay {
+    height: 100%;
+    position: fixed;
+    width: 0;
+    z-index: 3;
+    z-index: 5;
+    background-color: #1e1e1e;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+  .mobile-overlay a {
+    padding: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  #navBarOpen {
+    margin: 5%;
+  }
+
+  #closebtnshak {
+    height: 20px;
+    width: auto;
   }
 }
 
-.carousel-card {
-  min-height: 100vh;
-  width: 100%;
-  background-color: #292929;
-}
-
-.carousel-card {
-  position: relative;
-}
-
-.js-carousel--simple-dots {
-  position: absolute;
-  top: 45%;
-  width: 100%;
-}
-
-#card-carousel-1,
-#card-carousel-2,
-#card-carousel-3,
-#card-carousel-4,
-#card-carousel-5 {
-  display: flex;
-  width: 100%;
-  height: 50vh;
-  color: #393334;
-  position: relative;
-  overflow: hidden;
-  background-color: black;
-}
-
-#card-carousel-1::after,
-#card-carousel-2::after,
-#card-carousel-3::after,
-#card-carousel-4::after,
-#card-carousel-5::after {
-  content: "";
-  position: absolute;
-  width: 200px;
-  right: 0%;
-  top: -40%;
-  height: 300px;
-  background-color: black;
-  transform: rotate(-45deg);
-  transform-origin: right top;
-}
-#card-carousel-1 {
-  background: url("./images/softeng.png") no-repeat;
-  background-size: 120%;
-  background-position: 0% 0%;
-}
-#card-carousel-2 {
-  background: url("./images/softeng.png") no-repeat;
-  background-size: 100%;
-  background-position: 10% 90%;
-}
-#card-carousel-3 {
-  background: url("./images/softeng.png") no-repeat;
-  background-size: 150%;
-  background-position: 0% 0%;
-}
-#card-carousel-4 {
-  background: url("./images/softeng.png") no-repeat;
-  background-size: 100%;
-  background-position: 15% 0%;
-}
-#card-carousel-5 {
-  background: url("./images/softeng.png") no-repeat;
-  background-size: 120%;
-  background-position: 20% 60%;
-}
-#card__image--games {
-  background: url("./images/Shape 4.png") no-repeat;
-  background-position: 0 90%;
-  display: flex;
-  width: 10vw;
-  height: 18vh;
-  color: #393334;
-}
+/* ****************  MOBILE ********************** */
